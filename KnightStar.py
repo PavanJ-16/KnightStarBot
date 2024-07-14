@@ -79,7 +79,7 @@ while True:
         print("The time now is   "+hour)
         speakText("The time now is"+hour)
     elif "query" in command:
-        API_KEY="AIzaSyBJN7kQJahI0AGmcBxCnxBo9-4kuz7Q0wg"
+        API_KEY="key"
         genai.configure(api_key=API_KEY)
         model=genai.GenerativeModel('gemini-pro') 
         chat = model.start_chat(history=[])
